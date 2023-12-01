@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
 // const uri = 'mongodb+srv://danaaka8:p6TPp7ILrQUlDKfE@cluster0.uyhqfof.mongodb.net/alaa'; // Replace with your MongoDB connection URI
-const uri = 'mongodb://127.0.0.1:27017/alaa'; // Replace with your MongoDB connection URI
+const uri = process.env.MONGODB_URL; // Replace with your MongoDB connection URI
 //const uri = 'mongodb+srv://danaaka8:p6TPp7ILrQUlDKfE@cluster0.uyhqfof.mongodb.net/alaa'; // Replace with your MongoDB connection URI
 
 const path = require('path');
